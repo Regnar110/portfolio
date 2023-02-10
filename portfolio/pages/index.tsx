@@ -2,6 +2,12 @@ import Head from 'next/head'
 import { Inter } from '@next/font/google'
 import {BsFillMoonStarsFill} from 'react-icons/bs'
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube} from 'react-icons/ai'
+import Image from 'next/image'
+import deved from '../public/dev-ed-wave.png'
+
+import design from '../public/design.png'
+import code from '../public/code.png'
+import consulting from '../public/consulting.png'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,17 +29,79 @@ export default function Home() {
               <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="#">Resume</a></li>
             </ul>
           </nav>
-          <div className='text-center'>
-            <h2>Mateusz Wrycza</h2>
-            <h3>Front-End Developer</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero voluptatibus tempore ipsum nihil cupiditate corrupti, odit quo. Voluptatibus temporibus aspernatur atque aliquam? </p>
+          <div className='text-center p-10'>
+            <h2 className='text-5xl py-2 text-teal-600 font-medium'>Mateusz Wrycza</h2>
+            <h3 className='text-2xl py-2'>Front-End Developer</h3>
+            <p className='text-md py-5 leading-8 text-gray-800'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero voluptatibus tempore ipsum nihil cupiditate corrupti, odit quo. Voluptatibus temporibus aspernatur atque aliquam? </p>
           </div>
-          <div>
+          <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
             <AiFillTwitterCircle/>
             <AiFillLinkedin/>
             <AiFillYoutube/>
           </div>
-          <div></div>
+          <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden'>
+            <Image src={deved} layout="fill" objectFit='cover' alt="dev"/>
+          </div>
+        </section>
+        <section>
+          <div>
+            <h3 className='text-3xl py-1'>Services I offer</h3>
+            <p className='text-md py-2 leading-8 text-gray-800'>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+              Tempora itaque, porro perspiciatis veritatis labore aliquid volupta0te in illo autem eaque temporibus.
+              <span className='text-teal-500'>Agencies </span>
+                consulted for 
+              <span className='text-teal-500'> Startups </span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Neque enim minus reiciendis nesciunt totam, amet, tenetur adipisci, 
+                ipsa eos cupiditate illo.
+            </p>
+            <p className='text-md py-2 leading-8 text-gray-800'>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+              Tempora itaque, porro perspiciatis veritatis labore aliquid volupta0te in illo autem eaque temporibus.
+            </p>
+          </div>
+          <div>
+            <div className='text-center flex flex-col justify-center items-center shadow-lg p-10 rounded-xl my-10'>
+              <Image src={design} width={100} height={100} alt="design"/>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
+              <p className='py-2'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quos, iste laboriosam dolore ducimus at cupiditate! Ad adipisci rerum reprehenderit culpa aper
+              </p>
+              <h4 className='py-4 text-teal-600'>Design tools i use</h4>
+              <p className='text-gray-800 py-1'>Photoshop</p>
+              <p className='text-gray-800 py-1'>Ilustrator</p>
+              <p className='text-gray-800 py-1'>Figma</p>
+              {/* <Image src={code} width={100} height={100} alt="code"/>
+              <Image src={consulting} width={100} height={100} alt='consulting'/> */}
+            </div>
+            <div className='text-center flex flex-col justify-center items-center shadow-lg p-10 rounded-xl my-10'>
+              <Image src={code} width={100} height={100} alt="design"/>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
+              <p className='py-2'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quos, iste laboriosam dolore ducimus at cupiditate! Ad adipisci rerum reprehenderit culpa aper
+              </p>
+              <h4 className='py-4 text-teal-600'>Design tools i use</h4>
+              <p className='text-gray-800 py-1'>Photoshop</p>
+              <p className='text-gray-800 py-1'>Ilustrator</p>
+              <p className='text-gray-800 py-1'>Figma</p>
+              {/* <Image src={code} width={100} height={100} alt="code"/>
+              <Image src={consulting} width={100} height={100} alt='consulting'/> */}
+            </div>
+            <div className='text-center flex flex-col justify-center items-center shadow-lg p-10 rounded-xl my-10'>
+              <Image src={consulting} width={100} height={100} alt="design"/>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
+              <p className='py-2'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quos, iste laboriosam dolore ducimus at cupiditate! Ad adipisci rerum reprehenderit culpa aper
+              </p>
+              <h4 className='py-4 text-teal-600'>Design tools i use</h4>
+              <p className='text-gray-800 py-1'>Photoshop</p>
+              <p className='text-gray-800 py-1'>Ilustrator</p>
+              <p className='text-gray-800 py-1'>Figma</p>
+              {/* <Image src={code} width={100} height={100} alt="code"/>
+              <Image src={consulting} width={100} height={100} alt='consulting'/> */}
+            </div>
+          </div>
         </section>
       </main>
     </>
