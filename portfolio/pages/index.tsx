@@ -9,6 +9,12 @@ import design from '../public/design.png'
 import code from '../public/code.png'
 import consulting from '../public/consulting.png'
 
+import web1 from '../public/web1.png';
+import web2 from '../public/web2.png';
+import web3 from '../public/web3.png';
+import web4 from '../public/web4.png';
+import web5 from '../public/web5.png';
+import web6 from '../public/web6.png';
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -20,7 +26,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='bg-white px-10 text-black'>
+      <main className='bg-white px-10 text-black md:px-20 lg:px-40'>
         <section className='min-h-screen'>
           <nav className='py-10 mb-12 flex justify-between'>
             <h1 className='text-xl font-burtons'>DEVELOPEDBYMAT</h1>
@@ -30,16 +36,16 @@ export default function Home() {
             </ul>
           </nav>
           <div className='text-center p-10'>
-            <h2 className='text-5xl py-2 text-teal-600 font-medium'>Mateusz Wrycza</h2>
-            <h3 className='text-2xl py-2'>Front-End Developer</h3>
-            <p className='text-md py-5 leading-8 text-gray-800'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero voluptatibus tempore ipsum nihil cupiditate corrupti, odit quo. Voluptatibus temporibus aspernatur atque aliquam? </p>
+            <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>Mateusz Wrycza</h2>
+            <h3 className='text-2xl py-2 md:text-3xl'>Front-End Developer</h3>
+            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero voluptatibus tempore ipsum nihil cupiditate corrupti, odit quo. Voluptatibus temporibus aspernatur atque aliquam? </p>
           </div>
           <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
             <AiFillTwitterCircle/>
             <AiFillLinkedin/>
             <AiFillYoutube/>
           </div>
-          <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden'>
+          <div className='relative md:h-96 md:w-96 mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden'>
             <Image src={deved} layout="fill" objectFit='cover' alt="dev"/>
           </div>
         </section>
@@ -61,7 +67,7 @@ export default function Home() {
               Tempora itaque, porro perspiciatis veritatis labore aliquid volupta0te in illo autem eaque temporibus.
             </p>
           </div>
-          <div>
+          <div className='lg:flex gap-10'>
             <div className='text-center flex flex-col justify-center items-center shadow-lg p-10 rounded-xl my-10'>
               <Image src={design} width={100} height={100} alt="design"/>
               <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
@@ -100,6 +106,45 @@ export default function Home() {
               <p className='text-gray-800 py-1'>Figma</p>
               {/* <Image src={code} width={100} height={100} alt="code"/>
               <Image src={consulting} width={100} height={100} alt='consulting'/> */}
+            </div>
+          </div>
+        </section>
+        <section>
+          <div>
+            <h3 className='text-3xl py-1'>Portfolio</h3>
+            <p className='text-md py-2 leading-8 text-gray-800'>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+              Tempora itaque, porro perspiciatis veritatis labore aliquid volupta0te in illo autem eaque temporibus.
+              <span className='text-teal-500'>Agencies </span>
+                consulted for 
+              <span className='text-teal-500'> Startups </span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Neque enim minus reiciendis nesciunt totam, amet, tenetur adipisci, 
+                ipsa eos cupiditate illo.
+            </p>
+            <p className='text-md py-2 leading-8 text-gray-800'>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+              Tempora itaque, porro perspiciatis veritatis labore aliquid volupta0te in illo autem eaque temporibus.
+            </p>
+          </div>
+          <div className='flex flex-col gap-10 py-10 lg:flex-row, lg:flex-wrap'>
+            <div className='basis-1/3 flex-1'>
+              <Image src={web1} className='w-full h-full rounded-lg object-cover' alt='web1'/>
+            </div>
+            <div className='basis-1/3 flex-1'>
+              <Image src={web2} className='w-full h-full rounded-lg object-cover' alt='web2'/>
+            </div>
+            <div className='basis-1/3 flex-1'>
+              <Image src={web3} className='w-full h-full rounded-lg object-cover' alt='web3'/>
+            </div>
+            <div className='basis-1/3 flex-1'>
+              <Image src={web4} className='w-full h-full rounded-lg object-cover' alt='web4'/>
+            </div>
+            <div className='basis-1/3 flex-1'>
+              <Image src={web5} className='w-full h-full rounded-lg object-cover' alt='web5'/>
+            </div>
+            <div className='basis-1/3 flex-1'>
+              <Image src={web6} className='w-full h-full rounded-lg object-cover' alt='web6'/>
             </div>
           </div>
         </section>
