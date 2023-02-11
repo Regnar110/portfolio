@@ -1,21 +1,15 @@
 import Head from 'next/head'
-import { Inter } from '@next/font/google'
 import {BsFillMoonStarsFill} from 'react-icons/bs'
-import {AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube} from 'react-icons/ai'
+import {AiOutlineGithub}  from 'react-icons/ai'
 import Image from 'next/image'
-import deved from '../public/dev-ed-wave.png'
-
-import design from '../public/design.png'
+import dev from '../public/ludzik.png'
 import code from '../public/code.png'
 import consulting from '../public/consulting.png'
 
-import web1 from '../public/web1.png';
-import web2 from '../public/web2.png';
-import web3 from '../public/web3.png';
-import web4 from '../public/web4.png';
-import web5 from '../public/web5.png';
-import web6 from '../public/web6.png';
-const inter = Inter({ subsets: ['latin'] })
+import rw from '../public/rw.png';
+import wa from '../public/wa.png';
+import urb from '../public/urb.png';
+import sa from '../public/sa.png';
 
 export default function Home() {
   return (
@@ -29,81 +23,51 @@ export default function Home() {
       <main className='bg-white px-10 text-black md:px-20 lg:px-40'>
         <section className='min-h-screen'>
           <nav className='py-10 mb-12 flex justify-between'>
-            <h1 className='text-xl font-burtons'>DEVELOPEDBYMAT</h1>
+            <h1 className='text-xl font-burtons'>MatDev</h1>
             <ul className='flex items-center'>
               <li><BsFillMoonStarsFill className='cursor-pointer text-xl'/></li>
-              <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="#">Resume</a></li>
             </ul>
           </nav>
           <div className='text-center p-10'>
             <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>Mateusz Wrycza</h2>
             <h3 className='text-2xl py-2 md:text-3xl'>Front-End Developer</h3>
-            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero voluptatibus tempore ipsum nihil cupiditate corrupti, odit quo. Voluptatibus temporibus aspernatur atque aliquam? </p>
+            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto'>
+self-taught, who is constantly developing by investing in courses and creating new projects</p>
           </div>
           <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
-            <AiFillTwitterCircle/>
-            <AiFillLinkedin/>
-            <AiFillYoutube/>
+            <a href='https://github.com/Regnar110'><AiOutlineGithub /></a>
           </div>
           <div className='relative md:h-96 md:w-96 mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden'>
-            <Image src={deved} layout="fill" objectFit='cover' alt="dev"/>
+            <Image src={dev} layout="fill" objectFit='cover' alt="dev"/>
           </div>
         </section>
         <section>
           <div>
             <h3 className='text-3xl py-1'>Services I offer</h3>
-            <p className='text-md py-2 leading-8 text-gray-800'>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-              Tempora itaque, porro perspiciatis veritatis labore aliquid volupta0te in illo autem eaque temporibus.
-              <span className='text-teal-500'>Agencies </span>
-                consulted for 
-              <span className='text-teal-500'> Startups </span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Neque enim minus reiciendis nesciunt totam, amet, tenetur adipisci, 
-                ipsa eos cupiditate illo.
-            </p>
-            <p className='text-md py-2 leading-8 text-gray-800'>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-              Tempora itaque, porro perspiciatis veritatis labore aliquid volupta0te in illo autem eaque temporibus.
-            </p>
           </div>
           <div className='lg:flex gap-10'>
             <div className='text-center flex flex-col justify-center items-center shadow-lg p-10 rounded-xl my-10'>
-              <Image src={design} width={100} height={100} alt="design"/>
-              <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
-              <p className='py-2'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quos, iste laboriosam dolore ducimus at cupiditate! Ad adipisci rerum reprehenderit culpa aper
-              </p>
-              <h4 className='py-4 text-teal-600'>Design tools i use</h4>
-              <p className='text-gray-800 py-1'>Photoshop</p>
-              <p className='text-gray-800 py-1'>Ilustrator</p>
-              <p className='text-gray-800 py-1'>Figma</p>
-              {/* <Image src={code} width={100} height={100} alt="code"/>
-              <Image src={consulting} width={100} height={100} alt='consulting'/> */}
-            </div>
-            <div className='text-center flex flex-col justify-center items-center shadow-lg p-10 rounded-xl my-10'>
               <Image src={code} width={100} height={100} alt="design"/>
-              <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Writing code</h3>
               <p className='py-2'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quos, iste laboriosam dolore ducimus at cupiditate! Ad adipisci rerum reprehenderit culpa aper
+              I create websites and applications using the Javascript programming language. I also use different tools that make my code more readable and easier to manage.
               </p>
-              <h4 className='py-4 text-teal-600'>Design tools i use</h4>
-              <p className='text-gray-800 py-1'>Photoshop</p>
-              <p className='text-gray-800 py-1'>Ilustrator</p>
-              <p className='text-gray-800 py-1'>Figma</p>
+              <h4 className='py-4 text-teal-600'>I am writing code using:</h4>
+              <p className='text-gray-800 py-1'>TypeScript</p>
+              <p className='text-gray-800 py-1'>React.js</p>
+              <p className='text-gray-800 py-1'>CSS/SCSS and a littlebit of TailWindCSS</p>
+              <p className='text-gray-800 py-1'>Node.js + Express.js</p>
+              <p className='text-gray-800 py-1'>PostgreSQL, MongoDB basics for data management</p>
               {/* <Image src={code} width={100} height={100} alt="code"/>
               <Image src={consulting} width={100} height={100} alt='consulting'/> */}
             </div>
             <div className='text-center flex flex-col justify-center items-center shadow-lg p-10 rounded-xl my-10'>
               <Image src={consulting} width={100} height={100} alt="design"/>
-              <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Responsive Web Design</h3>
               <p className='py-2'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quos, iste laboriosam dolore ducimus at cupiditate! Ad adipisci rerum reprehenderit culpa aper
+                When creating websites and applications, I always work in such a way that they are adapted to both desktop and mobile devices
               </p>
-              <h4 className='py-4 text-teal-600'>Design tools i use</h4>
-              <p className='text-gray-800 py-1'>Photoshop</p>
-              <p className='text-gray-800 py-1'>Ilustrator</p>
-              <p className='text-gray-800 py-1'>Figma</p>
+
               {/* <Image src={code} width={100} height={100} alt="code"/>
               <Image src={consulting} width={100} height={100} alt='consulting'/> */}
             </div>
@@ -113,38 +77,29 @@ export default function Home() {
           <div>
             <h3 className='text-3xl py-1'>Portfolio</h3>
             <p className='text-md py-2 leading-8 text-gray-800'>
+              I create projects using the above-mentioned technologies as well as using various supporting libraries. When writing code, I try to make it as clear and understandable as possible. My portfolio consists of projects written only by me, mainly using the React.js library.
+              <br/>
+              <span className='text-red-500'>WARNING </span>
+              * Please note that the Urbanbin example project page below is outdated due to Heroku's new payment policy. Later, I'm going to convert the website to one that uses TypeScript and put the website server on google app engine.
+
+            </p>
+            {/* <p className='text-md py-2 leading-8 text-gray-800'>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
               Tempora itaque, porro perspiciatis veritatis labore aliquid volupta0te in illo autem eaque temporibus.
-              <span className='text-teal-500'>Agencies </span>
-                consulted for 
-              <span className='text-teal-500'> Startups </span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Neque enim minus reiciendis nesciunt totam, amet, tenetur adipisci, 
-                ipsa eos cupiditate illo.
-            </p>
-            <p className='text-md py-2 leading-8 text-gray-800'>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-              Tempora itaque, porro perspiciatis veritatis labore aliquid volupta0te in illo autem eaque temporibus.
-            </p>
+            </p> */}
           </div>
-          <div className='flex flex-col gap-10 py-10 lg:flex-row, lg:flex-wrap'>
-            <div className='basis-1/3 flex-1'>
-              <Image src={web1} className='w-full h-full rounded-lg object-cover' alt='web1'/>
+          <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
+            <div className='cursor-pointer basis-1/3 flex-1'>
+              <a href='https://rw-test-site.netlify.app/'><Image src={rw} className='w-full h-full rounded-lg object-cover' alt='web1'/></a>
             </div>
-            <div className='basis-1/3 flex-1'>
-              <Image src={web2} className='w-full h-full rounded-lg object-cover' alt='web2'/>
+            <div className='cursor-pointer basis-1/3 flex-1'>
+              <a href="https://app.netlify.com/sites/regnar110weatherapp/overview"><Image src={wa} className='w-full h-full rounded-lg object-cover' alt='web2'/></a>
             </div>
-            <div className='basis-1/3 flex-1'>
-              <Image src={web3} className='w-full h-full rounded-lg object-cover' alt='web3'/>
+            <div className='cursor-pointer basis-1/3 flex-1'>
+              <a href="https://starwarsthing.netlify.app/"><Image src={sa} className='w-full h-full rounded-lg object-cover' alt='web2'/></a>
             </div>
-            <div className='basis-1/3 flex-1'>
-              <Image src={web4} className='w-full h-full rounded-lg object-cover' alt='web4'/>
-            </div>
-            <div className='basis-1/3 flex-1'>
-              <Image src={web5} className='w-full h-full rounded-lg object-cover' alt='web5'/>
-            </div>
-            <div className='basis-1/3 flex-1'>
-              <Image src={web6} className='w-full h-full rounded-lg object-cover' alt='web6'/>
+            <div className='cursor-pointer basis-1/3 flex-1'>
+              <a href="https://urbanbin.netlify.app/#/"><Image src={urb} className='w-full h-full rounded-lg object-cover' alt='web3'/></a>
             </div>
           </div>
         </section>
