@@ -81,10 +81,10 @@ self-taught, who is constantly developing by investing in courses and creating n
           <div>
             <h3 className='text-3xl py-1'>Portfolio</h3>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-white'>
-              I create projects using the above-mentioned technologies as well as using various supporting libraries and API's. When writing code, I try to make it as clear and understandable as possible. My portfolio consists of projects written only by me, mainly using the React.js library.
+              I create projects using the above-mentioned technologies as well as using various supporting libraries and APIs. When writing code, I try to make it as clear and understandable as possible. My portfolio consists of projects written only by me, mainly using the React.js library.
               <br/>
               <span className='text-red-500'>WARNING </span>
-              * Please note that the Urbanbin example project page below is outdated due to Heroku's new payment policy. Later, I'm going to convert the website to one that uses TypeScript and put the website server on google app engine.
+              * Please note that the Urbanbin example project page below is outdated due to Heroku new payment policy. Later, Im going to convert the website to one that uses TypeScript and put the website server on google app engine.
 
             </p>
             {/* <p className='text-md py-2 leading-8 text-gray-800'>
