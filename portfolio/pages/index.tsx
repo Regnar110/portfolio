@@ -95,19 +95,19 @@ self-taught, who is constantly developing by investing in courses and creating n
           </div>
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
             <div className='cursor-pointer basis-1/3 flex-1'>
-              <a href='https://rw-test-site.netlify.app/'><Image src={rw} className='w-full h-full rounded-lg object-cover' alt='web1'/></a>
-            </div>
-            <div className='cursor-pointer basis-1/3 flex-1'>
               <a href="https://regnar110weatherapp.netlify.app/"><Image src={wa} className='w-full h-full rounded-lg object-cover' alt='web2'/></a>
-            </div>
-            <div className='cursor-pointer basis-1/3 flex-1'>
-              <a href="https://devbymat-facerecognition.netlify.app/"><Image src={facereco} className='w-full h-full rounded-lg object-cover' alt='web3'/></a>
             </div>
             <div className='cursor-pointer basis-1/3 flex-1'>
               <a href="https://starwarsthing.netlify.app/"><Image src={sa} className='w-full h-full rounded-lg object-cover' alt='web2'/></a>
             </div>
             <div className='cursor-pointer basis-1/3 flex-1'>
               <a href="https://urbanbin.netlify.app/#/"><Image src={urb} className='w-full h-full rounded-lg object-cover' alt='web3'/></a>
+            </div>
+            <div className='cursor-pointer basis-1/3 flex-1'>
+              <a href="https://devbymat-facerecognition.netlify.app/"><Image src={facereco} className='w-full h-full rounded-lg object-cover' alt='web4'/></a>
+            </div>
+            <div className='cursor-pointer basis-1/3 flex-1'>
+              <a href='https://rw-test-site.netlify.app/'><Image src={rw} className='w-full h-full rounded-lg object-cover' alt='web1'/></a>
             </div>
           </div>
         </section>
