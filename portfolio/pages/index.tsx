@@ -10,6 +10,7 @@ import rw from '../public/rw.png';
 import wa from '../public/wa.png';
 import urb from '../public/urb.png';
 import sa from '../public/sa.png';
+import facereco from '../public/facereco.png'
 
 import { useState } from 'react'
 
@@ -98,6 +99,9 @@ self-taught, who is constantly developing by investing in courses and creating n
             </div>
             <div className='cursor-pointer basis-1/3 flex-1'>
               <a href="https://regnar110weatherapp.netlify.app/"><Image src={wa} className='w-full h-full rounded-lg object-cover' alt='web2'/></a>
+            </div>
+            <div className='cursor-pointer basis-1/3 flex-1'>
+              <a href="https://devbymat-facerecognition.netlify.app/"><Image src={facereco} className='w-full h-full rounded-lg object-cover' alt='web3'/></a>
             </div>
             <div className='cursor-pointer basis-1/3 flex-1'>
               <a href="https://starwarsthing.netlify.app/"><Image src={sa} className='w-full h-full rounded-lg object-cover' alt='web2'/></a>
