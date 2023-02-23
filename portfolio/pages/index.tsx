@@ -96,7 +96,7 @@ self-taught, who is constantly developing by investing in courses and creating n
           </div>
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
             <div className='cursor-pointer basis-1/3 flex-1'>
-              <a href='https://rw-test-site.netlify.app/'><Image src={appler} className='w-full h-full rounded-lg object-cover' alt='web1'/></a>
+              <a href='https://devbymat-appleredesign.netlify.app/'><Image src={appler} className='w-full h-full rounded-lg object-cover' alt='web1'/></a>
             </div>
 
             <div className='cursor-pointer basis-1/3 flex-1'>
