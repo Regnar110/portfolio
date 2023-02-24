@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import {BsFillMoonStarsFill} from 'react-icons/bs'
+import {BsFillMoonStarsFill, BsGithub} from 'react-icons/bs'
 import {AiOutlineGithub}  from 'react-icons/ai'
 import Image from 'next/image'
 import dev from '../public/ludzik.png'
@@ -95,24 +95,53 @@ self-taught, who is constantly developing by investing in courses and creating n
             </p> */}
           </div>
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
-            <div className='cursor-pointer basis-1/3 flex-1'>
+            <div className='cursor-pointer flex flex-col basis-1/3 flex-1'>
               <a href='https://devbymat-appleredesign.netlify.app/'><Image src={appler} className='w-full h-full rounded-lg object-cover' alt='web1'/></a>
+              <div className='text-center flex justify-center items-center flex-col'>
+                <span className='text-md'>Main technologies used:</span>
+                <span className='text-xs'>React.js, Next.js, TypeScript, Redux Toolkit, Tailwind CSS, Sanity CMS, Next Sanity for GROQ query language, React-Responsive</span> 
+                <span className='flex gap-x-4 p-2'>Repo:<a href='https://github.com/Regnar110/apple_redesign'><BsGithub className='w-6 h-6 cursor-pointer'/></a></span>                
+              </div>
             </div>
-
-            <div className='cursor-pointer basis-1/3 flex-1'>
+            <div className='cursor-pointer flex flex-col basis-1/3 flex-1'>
               <a href="https://regnar110weatherapp.netlify.app/"><Image src={wa} className='w-full h-full rounded-lg object-cover' alt='web2'/></a>
+              <div className='text-center flex justify-center items-center flex-col'>
+                <span className='text-md'>Main technologies used:</span>
+                <span className='text-xs'>React.js, Node.js, Express.js, SCSS, GOOGLE API, NodeGeocoder</span>          
+                <span className='flex gap-x-4 p-2'>Repo:<a href='https://github.com/Regnar110/react_weather'><BsGithub className='w-6 h-6 cursor-pointer'/></a></span>       
+              </div>
             </div>
-            <div className='cursor-pointer basis-1/3 flex-1'>
+            <div className='cursor-pointer flex flex-col basis-1/3 flex-1'>
               <a href="https://starwarsthing.netlify.app/"><Image src={sa} className='w-full h-full rounded-lg object-cover' alt='web3'/></a>
+              <div className='text-center flex justify-center items-center flex-col'>
+                <span className='text-md'>Main technologies used:</span>
+                <span className='text-xs'>React.js, SCSS</span>       
+                <span className='flex gap-x-4 p-2'>Repo:<a href='https://github.com/Regnar110/react-sw-movies'><BsGithub className='w-6 h-6 cursor-pointer'/></a></span>          
+              </div>
             </div>
-            <div className='cursor-pointer basis-1/3 flex-1'>
+            <div className='cursor-pointer flex flex-col basis-1/3 flex-1'>
               <a href="https://urbanbin.netlify.app/#/"><Image src={urb} className='w-full h-full rounded-lg object-cover' alt='web4'/></a>
+              <div className='text-center flex justify-center items-center flex-col'>
+                <span className='text-md'>Main technologies used:</span>
+                <span className='text-xs'>React.js, Node.js, Express.js, React-Router, MongoDB, Nodemailer</span>     
+                <span className='flex gap-x-4 p-2'>Repo:<a href='https://github.com/Regnar110/urbanbin'><BsGithub className='w-6 h-6 cursor-pointer'/></a></span>            
+              </div>
             </div>
-            <div className='cursor-pointer basis-1/3 flex-1'>
+            <div className='cursor-pointer flex flex-col basis-1/3 flex-1'>
               <a href="https://devbymat-facerecognition.netlify.app/"><Image src={facereco} className='w-full h-full rounded-lg object-cover' alt='web5'/></a>
+              <div className='text-center flex justify-center items-center flex-col'>
+                <span className='text-md'>Main technologies used:</span>
+                <span className='text-xs'>React.js, TypeScript Node.js, Express.js, BCrypt, Knex, PostgreSQL, Tachyons</span>
+                <span className='flex gap-x-4 p-2'>Repo:<a href='https://github.com/Regnar110/ts_react_facereco'><BsGithub className='w-6 h-6 cursor-pointer'/></a></span>                
+              </div>
             </div>
-            <div className='cursor-pointer basis-1/3 flex-1'>
+            <div className='cursor-pointer flex flex-col basis-1/3 flex-1'>
               <a href='https://rw-test-site.netlify.app/'><Image src={rw} className='w-full h-full rounded-lg object-cover' alt='web6'/></a>
+              <div className='text-center flex justify-center items-center flex-col'>
+                <span className='text-md'>Main technologies used:</span>
+                <span className='text-xs'>React.js, React-Router, SCSS</span>  
+                <span className='flex gap-x-4 p-2'>Repo:<a href='https://github.com/Regnar110/rw-roofing'><BsGithub className='w-6 h-6 cursor-pointer'/></a></span>               
+              </div>
             </div>
           </div>
         </section>
